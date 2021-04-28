@@ -1,0 +1,15 @@
+#picture {
+  display: none;
+}
+
+.buttons {
+  display: inline
+}
+
+#show {
+  background-color: green;
+}
+
+#hide {
+  background-color: green;
+}
