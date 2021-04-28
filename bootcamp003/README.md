@@ -1,4 +1,6 @@
 #Lesson 3 tasks
 
-[chapterTasks:](./chapterTasks)
-there are a few tasks in this folder from book javascript.info chapter: variables
+1.[chapterTasks:](./chapterTasks)
+This section includes 6 subsections:
+⋅⋅1[comparisons](./chapterTasks/comparisons)
+2.[tasks:](./tasks) there are 4 tasks from lecturer
