@@ -1,6 +1,7 @@
 # Lesson 4 tasks
 
-## [Literature Section tasks]('./literatureSectionTasks')
-## [Required tasks]('./requiredTasks')
+## [Literature Section tasks](./literatureSectionTasks)
 
-### 1.[whileAndDoWhile.js]('./requiredTasks/whileAndDoWhile.js')
+## [Required tasks](./requiredTasks)
+
+### 1.[whileAndDoWhile.js](./requiredTasks/whileAndDoWhile.js)
