@@ -16,4 +16,4 @@ This section includes 6 subsections:
 
 #### 2. [variables](./chapterTasks/variables)
 
-### 2.[tasks:](./tasks) there are 4 tasks from lecturer
+### 2.[tasks:](./tasks)
