@@ -49,3 +49,9 @@
 ### [22.base2ToBase10.js](./requiredTasks/22.base2ToBase10.js)
 
 ### [21.digitDifference.js](./requiredTasks/21.digitDifference.js)
+
+### [23.insertArray.js](./requiredTasks/23.insertArray.js)
+
+### [24.factorial.js](./requiredTasks/24.factorial.js)
+
+### [25.passwordValidation.js](./requiredTasks/25.passwordValidation.js)
