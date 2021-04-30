@@ -18,7 +18,7 @@
 
 ### 7.[productSumDivision.js](./requiredTasks/productSumDivision.js)
 
-### 8.[printPattern.js](./requiredTasks/printPattern.js) : Unsolved
+### 8.[printPattern.js](./requiredTasks/printPattern.js)
 
 ### 9.[numberOfTypes.js](./requiredTasks/numberOfTypes.js)
 
