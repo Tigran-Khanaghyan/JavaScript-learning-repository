@@ -7,3 +7,7 @@
 ## [Lesson 3:](./bootcamp003) Primitive types and tasks
 
 ## [Lesson 4:](./bootcamp004) Reference Type, Branching, Loops
+
+## [Lesson 5:](./bootcamp005) Type Coercion for Primitives
+
+## [Lesson 6:](./bootcamp006) Intro to Functions
