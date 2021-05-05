@@ -197,7 +197,7 @@ function small10000(number) {
       if (number > 100) {
         let tempNumber = small1000(number);
         small10000 = small10000 + " " + tempNumber;
-      } else {
+      } else if (number > 100) {
         let tempNumber = small100(number);
         small10000 = small10000 + " " + tempNumber;
       }
@@ -211,7 +211,7 @@ function small10000(number) {
       if (number > 100) {
         let tempNumber = small1000(number);
         small10000 = small10000 + " " + tempNumber;
-      } else {
+      } else if (number < 100 && number !== 0) {
         let tempNumber = small100(number);
         small10000 = small10000 + " " + tempNumber;
       }
@@ -324,7 +324,8 @@ function small100000(number) {
   let firstPart = small100(firstPartTemp) + " " + thousand;
   let secondPart = "";
   if (secondPartTemp < 100) {
-    secondPart = small100(secondPartTemp);
+    if (secondPartTemp !== 0) secondPart = small100(secondPartTemp);
+    else secondPart = "";
   } else {
     secondPart = small1000(secondPartTemp);
   }
@@ -342,7 +343,8 @@ function small1000000(number) {
   }
   let secondPart = "";
   if (secondPartTemp < 100) {
-    secondPart = small100(secondPartTemp);
+    if (secondPartTemp !== 0) secondPart = small100(secondPartTemp);
+    else secondPart = "";
   } else {
     secondPart = small1000(secondPartTemp);
   }
@@ -362,4 +364,4 @@ function spellTheNumber(number) {
   }
 }
 
-console.log(spellTheNumber(178));
+console.log(spellTheNumber(1233));
