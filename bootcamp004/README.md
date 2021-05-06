@@ -55,3 +55,5 @@
 ### [24.factorial.js](./requiredTasks/24.factorial.js)
 
 ### [25.passwordValidation.js](./requiredTasks/25.passwordValidation.js)
+
+### 26.[base2ToBase10.v1.js](./requiredTasks/base2ToBase10.v1.js)
