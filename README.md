@@ -11,3 +11,7 @@
 ## [Lesson 5:](./bootcamp005) Type Coercion for Primitives
 
 ## [Lesson 6:](./bootcamp006) Intro to Functions
+
+## [Lesson 7:](./bootcamp007) Scope and Closure
+
+## [Lesson 8:](./bootcamp008) Type Coercion for Reference Types
