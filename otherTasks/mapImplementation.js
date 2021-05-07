@@ -11,8 +11,9 @@ function map(array, fn) {
 }
 
 let arr = [2, 4, 6, 8];
+
 function multiply(x) {
-  return (x *= 2);
+  return x *= 2;
 }
 
 console.log(map(arr, multiply));
