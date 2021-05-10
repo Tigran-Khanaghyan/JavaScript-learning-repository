@@ -15,3 +15,5 @@
 ## [Lesson 7:](./bootcamp007) Scope and Closure
 
 ## [Lesson 8:](./bootcamp008) Type Coercion for Reference Types
+
+## [Lesson 9:](./bootcamp009) "Mines Weeper" and "Tic Tac Toe" games
