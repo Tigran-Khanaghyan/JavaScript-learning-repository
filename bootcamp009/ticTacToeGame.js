@@ -1,6 +1,6 @@
 "use strict";
 
-const size = 3;
+const size = 5;
 let newGameDesk = gameDesk(size);
 
 function gameDesk(size) {
@@ -119,5 +119,12 @@ function runTicTacToe() {
   }
 }
 
+function printMatrix(matrix) {
+    let str = ''
+  for (let array of matrix) {
+    console.log(array)
+  }
+}
+
 console.log(runTicTacToe());
-console.log(newGameDesk);
+console.log(printMatrix(newGameDesk));
