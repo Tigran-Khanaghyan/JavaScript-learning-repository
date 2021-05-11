@@ -1,0 +1,8 @@
+1. [requiredTasks](./requiredTasks)
+   1. [concatenateArray.js](./requiredTasks/concatenateArray.js)
+   2. [findImplementation.js](./requiredTasks/findImplementation.js)
+   3. [findIndexImplementation.js](./requiredTasks/findIndexImplementation.js)
+   4. [forEachImplementation.js](./requiredTasks/forEachImplementation.js)
+   5. [mapImplementation.js](./requiredTasks/mapImplementation.js)
+   6. [sliceImplementation.js](./requiredTasks/sliceImplementation.js)
+   7. [spliceImplementation.js](./requiredTasks/spliceImplementation.js)
