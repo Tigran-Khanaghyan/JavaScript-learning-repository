@@ -19,4 +19,6 @@ let users = [
 ];
 
 let newArray = filter(users, (item) => item.id == 1);
+let newArrayJs = users.filter((item) => item.id == 1);
 console.log(newArray);
+console.log(newArrayJs);
