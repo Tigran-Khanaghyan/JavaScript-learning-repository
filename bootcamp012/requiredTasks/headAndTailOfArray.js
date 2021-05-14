@@ -11,11 +11,11 @@ let arr = [1, 2, 3];
 
 function getHead(arr) {
   let [a] = [...arr];
-  return a;
+  return [a];
 }
 
 function getTail(arr) {
-  let [a, ...tail] = [...arr];
+  let [, ...tail] = [...arr];
   return tail;
 }
 
