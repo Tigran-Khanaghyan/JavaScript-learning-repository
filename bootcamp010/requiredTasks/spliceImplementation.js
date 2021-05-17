@@ -31,8 +31,8 @@ function splice(arr, start, deleteCount, ...args) {
 
   return deletedElements;
 }
-let start = -2;
-let count = 7;
+let start = 1;
+let count = 1;
 let arr = [1, 2, 3, 4, 5];
 let arrForJsSplice = [];
 let arrForMySplice = [];
@@ -41,7 +41,7 @@ for (let item of arr) {
   arrForMySplice.push(item);
 }
 
-console.log(arrForJsSplice.splice(start, count, "a", "b", "c"));
-console.log(splice(arrForMySplice, start, count, "a", "b", "c"));
+console.log(arrForJsSplice.splice(start, count, 'Hello', 1, 2));
+console.log(splice(arrForMySplice, start, count, 'hello', 1, 2));
 console.log(arrForJsSplice);
 console.log(arrForMySplice);
