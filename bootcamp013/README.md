@@ -1,0 +1,16 @@
+# Lesson 13 tasks
+
+1. [otherTasks](./bootcamp013/otherTasks)
+   1. [excludeBackReferences.js](./otherTasks/excludeBackReferences.js)
+   2. [getDateAgo.js](./otherTasks/getDateAgo.js)
+   3. [intoJsonAndBack.js](./otherTasks/intoJsonAndBack.js)
+   4. [lastDayOfMonth.js](./otherTasks/lastDayOfMonth.js)
+2. [requiredTasks](./bootcamp013/requiredTasks)
+   1. [bestAverageScore.js](./requiredTasks/bestAverageScore.js)
+   2. [dayNumberOfTheYear.js](./requiredTasks/dayNumberOfTheYear.js)
+   3. [fieldName.js](./requiredTasks/fieldName.js)
+   4. [formatDate.js](./requiredTasks/formatDate.js)
+   5. [getDay.js](./requiredTasks/getDay.js)
+   6. [getWeekOfMonth.js](./requiredTasks/getWeekOfMonth.js)
+   7. [getterSetter.js](./requiredTasks/getterSetter.js)
+   8. [monthsInterval.js](./requiredTasks/monthsInterval.js)
