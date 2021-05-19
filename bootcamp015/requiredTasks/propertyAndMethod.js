@@ -48,8 +48,8 @@ console.log(user.__proto__);   */
 console.log(user.__proto__); */
 
 /*********************************************************/
-
-/*const person = {
+/*
+const person = {
   isHuman: true,
   hasAge: true,
 };
@@ -58,8 +58,8 @@ const user2 = { name: "Adele", __proto__: person };
 user1.__proto__.isHuman = false;
 console.log(user1.isHuman);
 console.log(user2.isHuman); 
-console.log(person.isHuman) 
- */
+console.log(person.isHuman)   */
+
 /*************************************************************/
 
 /*const Human = {
