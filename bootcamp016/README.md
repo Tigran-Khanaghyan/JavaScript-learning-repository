@@ -1,0 +1,26 @@
+# Lesson 16 tasks
+
+1. [otherTasks](./bootcamp016/otherTasks)
+
+   1. [addMethodToFunctions.js](./bootcamp016/addMethodToFunctions.js)
+   2. [changingPrototype.js](./bootcamp016/changingPrototype.js)
+   3. [createAccumulator.js](./bootcamp016/createAccumulator.js)
+   4. [decoratingDeferToFunctions.js](./bootcamp016/decoratingDeferToFunctions.js)
+   5. [differenceBetweenCalls.js](./bootcamp016/differenceBetweenCalls.js)
+   6. [fakeToStringForDictionary.js](./bootcamp016/fakeToStringForDictionary.js)
+   7. [sameConstructorObject.js](./bootcamp016/sameConstructorObject.js)
+   8. [searchingAlgorithm.js](./bootcamp016/searchingAlgorithm.js)
+   9. [this.js](./bootcamp016/this.js)
+   10. [twoFunctionsOneObject.js](./bootcamp016/twoFunctionsOneObject.js)
+   11. [whereDoesItWrite.js](./bootcamp016/whereDoesItWrite.js)
+   12. [whyBothHamstersFull.js](./bootcamp016/whyBothHamstersFull.js)
+   13. [workingWithPrototype.js](./bootcamp016/workingWithPrototype.js)
+
+2. [requiredTasks](./bootcamp016/requiredTasks)
+   1. [PrototypeChainInJavaScript.png](./bootcamp016/PrototypeChainInJavaScript.png)
+   2. [babyConstrucor.js](./bootcamp016/babyConstrucor.js)
+   3. [calculyatorConstructor.js](./bootcamp016/calculyatorConstructor.js)
+   4. [carConstructor.js](./bootcamp016/carConstructor.js)
+   5. [person.js](./bootcamp016/person.js)
+   6. [personConstructor.js](./bootcamp016/personConstructor.js)
+   7. [playlist.js](./bootcamp016/playlist.js)
