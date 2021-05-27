@@ -178,7 +178,7 @@ class ReaderBook extends LibraryBook {
     if (typeof value !== "string") {
       throw new Error("The Date must be a string");
     }
-    this._expirationDate = this.expirationDate;
+    this._expirationDate = value;
   }
   get isReturned() {
     return this._isReturned;
@@ -191,7 +191,8 @@ class ReaderBook extends LibraryBook {
   }
   toString() {
     let str = super.toString();
-    return `${str}
+    return `
+${str}
 Reader Book id: ${this.readerBookId}
 Expiration Date: ${this.expirationDate}
 Returned: ${this.isReturned}`;
@@ -254,7 +255,8 @@ class Reader {
     return `First Name:${this.firstName}
 Last Name: ${this.lastName}
 Reader Id: ${this.readerId}
-Reader books: ${this.books}`;
+Reader books: 
+[${this.books} ]`;
   }
   becomeReaderOfLibrary(library) {
     library.readers.push(this);
@@ -327,6 +329,7 @@ class Library {
       this.readers.includes(reader) &&
       book instanceof ReaderBook
     ) {
+      book.decreaseQuantityBy(1);
       return book;
     }
   }
@@ -342,13 +345,13 @@ let Vardananq = new LibraryBook("Vardananq", "Derenik Demirchyan", 1);
 //console.log(libraryBook.toString());
 let Samvel = new ReaderBook("Samvel", "Raffi", 1, "27.5.2021", true);
 //console.log(readerBook instanceof ReaderBook);
-//console.log(Book.titles)
+//console.log(Samvel.toString())
 let reader = new Reader("Tigran", "Khanaghyan");
 //console.log(reader.toString());
 let nationalLibrary = new Library();
 reader.becomeReaderOfLibrary(nationalLibrary);
-nationalLibrary.addBooks(Vardananq, Vardananq, YDNJS, Samvel);
-console.log(nationalLibrary.checkReaderId(reader));
+nationalLibrary.addBooks(Vardananq, Vardananq, YDNJS, Samvel, Samvel);
+//console.log(nationalLibrary.checkReaderId(reader));
 
 //console.log(Library.lendBook.call(nationalLibrary, Samvel, reader));
 reader.borrowBook(Samvel, nationalLibrary);
