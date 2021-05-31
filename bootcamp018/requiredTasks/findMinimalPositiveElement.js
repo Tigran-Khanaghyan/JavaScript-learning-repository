@@ -4,9 +4,12 @@
 element. (if such element does not exist, return -1). */
 
 function findElement(arr) {
-  function iter(iArr, minimum = Infinity) {
-    if (iArr.length === 0) {
+  function iter(iArr, minimum) {
+    if (iArr.length === 0 && minimum !== Infinity) {
       return minimum;
+    }
+    if(iArr.length === 0 && minimum === Infinity){
+        return -1
     }
     const [first, ...rest] = iArr;
     if (first < minimum && first >= 0) {
@@ -17,5 +20,5 @@ function findElement(arr) {
   return iter(arr, Infinity);
 }
 
-let arr = [45, -9, 0, 15, 5, -78];
+let arr = [-45, -9, -15, -5, -78];
 console.log(findElement(arr));
