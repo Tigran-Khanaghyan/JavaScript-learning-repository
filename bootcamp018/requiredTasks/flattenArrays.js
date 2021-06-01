@@ -9,10 +9,9 @@ function flatArrays(arr) {
       acc = [...acc, ...item];
       return flatArrays(acc);
     }
-    acc = [...acc, item];
-    return acc;
+    return [...acc, item];
   }, []);
 }
 
-let arr = [1, [3, 4, [[1], 2]], 10];
+let arr = [1, [3, 4, [1, 2]], 10];
 console.log(flatArrays(arr));
