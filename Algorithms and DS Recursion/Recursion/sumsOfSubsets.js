@@ -1,12 +1,23 @@
-'use strict'
+"use strict";
 
-function sumOfSubsets(arr){
-    let array = [0]
-    for(let i = 0; i < arr.length; ++i){
-        for(let j = i + 1; j < arr.length; ++j){
-            
-        }
+function sumOfSubsets(arr) {
+  function iter(iArr, newArray) {
+    if (iArr.length === 0) {
+      newArray.push(arr.reduce((acc, item) => (acc += item), 0));
+      return newArray;
     }
+    const [first, ...rest] = iArr;
+    newArray.push(first);
+    rest.map((item) => {
+      item += first;
+      newArray.push(item);
+      return;
+    });
+
+    return iter(rest, newArray);
+  }
+  return iter(arr, [0]);
 }
 
-let arr = [2, 3]
+let arr = [2, 4, 5];
+console.log(sumOfSubsets(arr));
