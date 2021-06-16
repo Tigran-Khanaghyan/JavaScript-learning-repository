@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="clock"></div>
+    <script>
+        function createClock(elem){
+            
+            function getCurrentTime(){
+                let date = new Date()
+                let hours = date.getHours()
+                let minutes = date.getMinutes()
+                let seconds = date.getSeconds()
+
+                if(seconds < 10){
+                    seconds = '0' + seconds
+                }
+                    
+                let clock = hours + ':' + minutes + ':' + seconds
+                elem.textContent = clock
+            }
+            
+            setInterval(getCurrentTime, 1000)           
+            
+        }
+        let clock = document.getElementById('clock')
+        createClock(clock)
+    </script>
+</body>
+</html>
