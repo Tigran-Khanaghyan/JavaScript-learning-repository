@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: 0;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  width: calc(100% - 500px);
+  height: 500px;
+  margin: 150px auto;
+  background-color: rgb(231, 223, 223);
+}
+
+.input-content {
+  text-align: center;
+  margin: 40px;
+  width: 500px;
+  height: 100px;
+}
+.input-content p {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.input-content .input-field {
+  position: absolute;
+  padding: 5px;
+  outline: none;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 100%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.input-content .input-button {
+  position: absolute;
+  right: 0;
+  width: 20%;
+  height: 100%;
+  color: green;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.search-and-button {
+  position: relative;
+  border: 2px solid green;
+  border-radius: 5px;
+  height: 45px;
+  width: 100%;
+}
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  visibility: hidden;
+}
+.icons {
+  display: inline-flex;
+}
+.icon {
+  padding-left: 5px;
+}
+
+.dynamic-input {
+  padding: 5px;
+  outline: none;
+  width: 250px;
+  height: 100%;
+  border-radius: 5px;
+}
