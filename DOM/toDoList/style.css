@@ -12,6 +12,9 @@
   margin: 150px auto;
   background-color: rgb(231, 223, 223);
 }
+.to-do {
+  height: 40px;
+}
 
 .input-content {
   text-align: center;

@@ -5,9 +5,20 @@ let inputField = document.querySelector(".input-field");
 const todoItem = document.querySelector(".todo-item");
 let list = document.querySelector(".input-content");
 const clearButton = document.querySelector(".clear-button");
+let container = document.querySelector(".container");
+let searchAndButton = document.querySelector(".search-and-button");
+let pToDo = document.querySelector(".to-do");
 let items = [];
 let inputFieldValue = "";
 let itemsQuantity = 0;
+let itemsHeightArea = 0;
+
+let areaHeightForItems =
+  container.clientHeight -
+  clearButton.clientHeight -
+  searchAndButton.clientHeight -
+  pToDo.clientHeight -
+  100;
 
 inputField.addEventListener("input", (event) => {
   inputFieldValue = event.target.value;
@@ -20,6 +31,11 @@ addItemBtn.addEventListener("click", () => {
   newItem.style.visibility = "visible";
   newItem.classList.add("item" + itemsQuantity);
   list.append(newItem);
+  itemsHeightArea += newItem.clientHeight;
+  if (itemsHeightArea > areaHeightForItems) {
+    let height = container.clientHeight;
+    container.style.height = `${height * 2}px`;
+  }
   let id = Math.random();
   let itemObj = { id, newItem };
   items.push(itemObj);
@@ -35,6 +51,8 @@ clearButton.addEventListener("click", function clear() {
       item.remove();
       items.length = 0;
       itemsQuantity = 0;
+      itemsHeightArea = 0;
+      container.style.height = "500px";
     }
   });
 });
