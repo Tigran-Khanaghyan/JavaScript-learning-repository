@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+    width: 1000px;
+    background-color: yellow;
+}
+.picture {
+    position: absolute;
+    top: 170px;
+    left: 170px;
+}
+.arrow {
+    width: 30px;
+    height: 30px;
+}
+.left-arrow {
+    position: absolute;
+    left: 0;
+}
+.right-arrow {
+    position: absolute;
+    right: 0;
+}
+.arrow img{
+    width: 30px;
+    height: 30px;
+}
+.one {
+    z-index: 0;
+}
+.two {
+    z-index: 0;
+}
+.three {
+    z-index: 0;
+}
