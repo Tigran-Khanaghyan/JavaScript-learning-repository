@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Timer</title>
+</head>
+<body>
+ <div class="container">
+     <div class="volume-container">
+        <div class="volume"></div>
+     </div>
+     <header class="timer-header">
+        <p>Hours</p>
+        <p>Minutes</p>
+        <p>Seconds</p>
+     </header>
+     <main class="timer">
+         <div class="time hours"><input type='text' value='00' class="input-hours"></div>
+         <div class="colon"><p>:</p></div>
+         <div class="time minutes"><input type='text' value='00' class="input-minutes"></div>
+         <div class="colon"><p>:</p></div>
+         <div class="time seconds"><input type='text' value='00' class="input-seconds"></div>
+     </main>
+     <div class="buttons">
+        <button class='start'>Start</button>
+         <button class='stop'>Stop</button>
+         <button class='reset'>Reset</button>
+     </div>
+     <audio class='my-audio'>
+        <source src="ringtone/timer-ringtone.mp3" type="audio/mpeg">
+    </audio>
+ </div>
+ <script src="app.js"></script>
+</body>
+</html>
