@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.search-field {
+    width: 250px;
+    height: 40px;
+    border: 1px solid green;
+    border-radius: 5px;
+}
+.find-button {
+    height: 40px;
+    width: 90px;
+    color: green;
+    border: 1px solid green;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 15px;
+}
+.books {
+    padding: 30px;
+}
