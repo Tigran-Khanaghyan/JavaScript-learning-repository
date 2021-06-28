@@ -1,45 +1,42 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .container {
-    width: 100%;
-    margin: 50px auto;
-    display: flex;
-    justify-content: center;
+  width: 100%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
 }
 
 .search-field {
-    width: 250px;
-    height: 40px;
-    border: 1px solid green;
-    border-radius: 5px;
+  width: 250px;
+  height: 40px;
+  border: 1px solid green;
+  border-radius: 5px;
 }
 .find-button {
-    height: 40px;
-    width: 90px;
-    color: green;
-    border: 1px solid green;
-    border-radius: 5px;
-    background-color: white;
-    font-size: 15px;
+  height: 40px;
+  width: 90px;
+  color: green;
+  border: 1px solid green;
+  border-radius: 5px;
+  background-color: white;
+  font-size: 15px;
 }
 .books {
-    padding: 30px;
-}
-.pages  {
-
+  padding: 30px;
 }
 .pages li {
-    padding: 20px;
-    margin-left: 15px;
-    font-size: 20px;
-    display: inline;   
-    color: blue;
-    cursor: pointer;
+  padding: 20px;
+  margin-left: 15px;
+  font-size: 20px;
+  display: inline;
+  color: blue;
+  cursor: pointer;
 }
 .pages li:hover {
-    color: red;
+  color: red;
 }

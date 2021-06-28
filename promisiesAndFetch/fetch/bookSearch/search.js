@@ -74,8 +74,6 @@ findBook.addEventListener("click", () => {
             linksUl.append(li);
           });
           pageNumbers.style.display = "block";
-
-          console.log(newPageData);
         });
       });
       pageUl.append(pageLi);
@@ -101,6 +99,5 @@ findBook.addEventListener("click", () => {
       li.append(a);
       linksUl.append(li);
     });
-    // console.log(data);
   });
 });
