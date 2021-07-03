@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+nav {
+    width: 300px;
+    height: 300px;
+    margin: 250px auto;
+    color: black;
+    background-color:#DD4124;
+}
+
+img {
+    /* background-color: white; */
+    width: 50px;
+    height: 50px;
+}
+ul{
+    list-style-type: none;
+}
+ul li {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 10px;
+}
