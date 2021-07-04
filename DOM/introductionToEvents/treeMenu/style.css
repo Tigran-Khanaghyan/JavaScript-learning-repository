@@ -1,0 +1,5 @@
+span:hover {
+    font-weight: bolder;
+    transition: 200ms;
+    cursor: pointer;
+}
