@@ -18,20 +18,45 @@ function code(string) {
   });
   return binaryNumbers.join("");
 }
-function decode(string) {
+function decode(str) {
+  const decimalNumbers = [];
   const numbers = [];
-  while (string.length) {
-    const zeroOrOne = string.slice(0, 2);
+  while (str.length) {
+    const zeroOrOne = str.slice(0, 2);
     if (zeroOrOne === "10") {
-      numbers.push("0");
-      string = string.slice(2)
+      decimalNumbers.push("0");
+      str = str.slice(2);
     } else if (zeroOrOne === "11") {
-      numbers.push("1");
-      string = string.slice(2)
+      decimalNumbers.push("1");
+      str = str.slice(2);
+    } else {
+      let counter = 0;
+      for (let i = 0; str[i] !== "1"; ++i) {
+        if (str[i] !== "1") {
+          ++counter;
+        }
+      }
+      str = str.slice(counter + 1);
+      decimalNumbers.push(str.slice(0, counter + 1));
+      str = str.slice(counter + 1);
     }
   }
+  decimalNumbers.forEach((number) => {
+    if (number === "0" || number === "1") {
+      return numbers.push(number);
+    }
+    let exponent = 0;
+    let digit = 0;
+    while (number.length) {
+      const lastDigitIndex = number.length - 1;
+      digit += number[lastDigitIndex] * Math.pow(2, exponent);
+      exponent++;
+      number = number.slice(0, number.length - 1);
+    }
+    numbers.push(digit);
+  });
 
-  return numbers
+  return numbers.join('');
 }
-console.log(code("77338855"));
-console.log(decode("10000"));
+
+
