@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+}
+.droppable {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border: 2px solid green;
+}
+
+.card {
+  height: 80px;
+  width: 80px;
+  background-color: yellow;
+}
