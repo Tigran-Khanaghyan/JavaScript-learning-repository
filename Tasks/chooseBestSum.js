@@ -1,35 +1,21 @@
-function chooseBestSum(miles, quantity, townsList) {
-  if (townsList.length < quantity) {
-    return null;
-  }
-  let townsGroups = [];
-  for (let i = 0; i < townsList.length - 2; ++i) {
-    for (let j = i + 1; j < townsList.length - 1; ++j) {
-      for (let k = j + 1; k < townsList.length; ++k) {
-        townsGroups.push([townsList[i], townsList[j], townsList[k]]);
+function chooseBestSum(t, k, ls) {
+  var biggestCount = 0;
+  var recurseTowns = function (townsSoFar, lastIndex) {
+    townsSoFar = townsSoFar || [];
+    //base case
+    if (townsSoFar.length === k) {
+      var sumDistance = townsSoFar.reduce((a, b) => a + b);
+      if (sumDistance <= t && sumDistance > biggestCount) {
+        biggestCount = sumDistance;
       }
+      return; //EJECT
     }
-  }
-  let townsMiles = townsGroups.map((towns) => {
-    return towns.reduce((acc, item) => acc + item, 0);
-  });
-  let closest = 0;
-  for (let i = 0; i < townsMiles.length; ++i) {
-    if (townsMiles[i] < miles) {
-      closest = townsMiles[i];
-      break;
+    //recursive case
+    for (var i = lastIndex + 1 || 0; i < ls.length; i++) {
+      recurseTowns(townsSoFar.concat(ls[i]), i);
     }
-  }
-  townsMiles.forEach((item) => {
-    if (item <= miles) {
-      if (miles - item < miles - closest) {
-        closest = item;
-      }
-    }
-  });
-  return closest;
+  };
+  recurseTowns();
+
+  return biggestCount || null;
 }
-
-let ls = [91, 74, 73, 85, 73, 81, 87];
-
-console.log(chooseBestSum(230, 3, ls));
